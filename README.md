@@ -22,5 +22,17 @@ As part of the group, I was responsible for:
 - **User Profile Page** – Profile system for users accessing the platform
 
 ##  Screenshots
+Content Page
 ![image](https://github.com/user-attachments/assets/5b5c2757-670d-4c4c-9194-674102f8d914)
+
+Editor's Page
+![image](https://github.com/user-attachments/assets/a010a48c-6919-42f1-bf96-9dac9de9e4a6)
+
+Student Detail's Page
+![image](https://github.com/user-attachments/assets/5026170a-9a02-4553-ac44-ccb9f028412f)
+
+User Profile Page
+![image](https://github.com/user-attachments/assets/553707a4-f227-4945-85a6-878054ed9511)
+
+
 
