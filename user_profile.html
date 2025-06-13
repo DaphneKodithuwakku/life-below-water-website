@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+         /* Header and navigation */
+
+        header {
+            font-family: poppins;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #093A3E; /* Dark blue header */
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        #navbar li {
+            margin-left: 1rem;
+        }
+
+        #navbar a {
+            color: #ffffff;
+            padding: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        #navbar a:hover,
+        #navbar a.active {
+            background-color: #0077b6; /* Hover and active link background */
+        }
+
+        body{
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #093A3E;
+            background: url(pictures/users.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin-top: 10%;
+            margin: 10%;
+            height: fit-content;
+            position: relative;
+            background: url(pictures/users_profile_wallpaper.jpg);
+            background-size: cover;
+            background-position: center;
+            background-color: #093A3E;
+            opacity: 85%;
+            
+        }
+        #myProgress{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2vh;
+        }
+        #myProgress-bar{
+            position: relative;
+            top: 0%;
+            width: 300%;
+            height: 30px;
+
+        }
+        #startButtonContainer{
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            
+    
+        }
+        #startButton{
+            width: 100px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        
+        #output {
+            margin-top: 20px;
+            border: 2px solid white; /* Add a white border */
+            padding: 20px;
+            opacity: 90%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            background-color: #093A3E;
+        }
+        .hidden {
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            font-family: poppins;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #093A3E; /* Dark blue footer */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: .5rem;
+        }
+
+        footer nav li {
+            margin: 0 0.5rem;
+        }
+
+        footer nav a {
+            color: #fff;
+            transition: color 0.3s;
+
+        }
+
+        footer nav a:hover {
+            color: #97C8EB; /* Hover link color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Include the navigation bar from Student 2 -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="pictures/logo.jpg" alt="Life Below Water Logo">
+                </a>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="sitemap.html">Site map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="student_details.html">About us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="myProgress">
+        <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+        <div id="startButtonContainer">
+            <button id="startButton">Start</button>
+        </div>
+        <div id="output" class="hidden"></div>
+    </div>
+    <script src="user_profile.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2024 Life Below Water. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="#" target="_blank">Donate</a></li>
+            <li><a href="#" target="_blank">Volunteer</a></li>
+            <li><a href="#" target="_blank">Resources</a></li>
+            <li><a href="#" target="_blank">Partnerships</a></li>
+        </ul>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: large;
+            background: url(pictures/ContentPage_wallpaper.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #093A3E;
+			margin-left: 0px;
+
+		}
+
+		.logo img {
+			max-height: 50px;
+		}
+
+		#navbar ul {
+			list-style-type: none;
+			display: flex;
+		}
+
+		#navbar li {
+			margin-left: 1rem;
+		}
+
+		#navbar a {
+			color: #ffffff;
+			padding: 0.5rem;
+			transition: background-color 0.3s;
+		}
+
+		#navbar a:hover,
+		#navbar a.active {
+			background-color: #0077b6; /* Hover and active link background */
+		}
+        .student {
+            background-color: #97C8EB;
+            color: #000;
+            opacity: 68%;
+        }
+        p {
+            color: black;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .student p {
+            color: black;
+        }
+        div {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        a {
+            color: black;
+        }
+        a:hover {
+            color: black;
+        }
+        .collapsible {
+            background-color: #093A3E;
+            opacity: 72%;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            position: relative;
+        }
+        .active, .collapsible:hover {
+            background-color: #093A3E;
+        }
+        .collapsible::after {
+          content: "\25BC";
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 15px;
+        }
+        .active::after{
+          content: "\25B2";
+        }
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #97C8EB;
+            opacity: 85%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #093A3E; /* Dark blue footer */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            left: 0;
+            bottom: 0;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: .5rem;
+        }
+
+        footer nav li {
+            margin: 0 0.5rem;
+        }
+
+        footer nav a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        footer nav a:hover {
+            color: #97C8EB; /* Hover link color */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="pictures/logo.jpg" alt="Life Below Water Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="student_details.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Page Editor</h1>
+    <div class="student">
+        <p>
+            Name:- Daphne Kodithuwakku<br />
+            Role:- Student 03 <br /> These pages were edited by me.
+        </p>
+    </div>
+
+    <button type="button" class="collapsible">User Profile</button>
+    <div class="content">
+        <p>
+            A progressive profile form was made with the use of prompts to collect the user information.
+            This process consists of 4 steps. The user profile (Step 1) consists of 5 prompts, as in name, surname, age, gender, and agree with privacy terms. As we are done entering information into the prompts, it displays the collected data.
+            As we are done with the user profile prompts, the next button will lead to the other step prompts, which are volunteering tasks (Step 2), Qualification (Step 3), Availability and contact information (Step 4).
+            A progress bar was also used to represent the completion of the profile.
+        </p>
+        <a href="user_profile.html" target="_blank">link to User Profile</a>
+    </div>
+
+    <button type="button" class="collapsible">Student Details</button>
+    <div class="content">
+        <p>
+            With interactive thumbnails, a team page was created in order to discover information about the team members.
+            Instead of our actual images, we have used animated images, to enhance the creativity of the web page. The user can discover about the student details by hovering the images.
+        </p>
+        <a href="student_details.html" target="_blank">link to Student Details</a>
+    </div>
+
+    <button type="button" class="collapsible">Content Page</button>
+    <div class="content">
+        <p>
+            A content page was created.
+        </p>
+        <a href="daphne_content.html" target="_blank">link to content page</a>
+    </div>
+
+    <script>
+        // JavaScript for collapsible sections
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+<footer>
+    <p>&copy; 2024 Life Below Water. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="#" target="_blank">Donate</a></li>
+            <li><a href="#" target="_blank">Volunteer</a></li>
+            <li><a href="#" target="_blank">Resources</a></li>
+            <li><a href="#" target="_blank">Partnerships</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

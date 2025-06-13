@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Marine Pollution</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			width: auto;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: #97C8EB;
+		}
+		header {
+			background-color: #003366;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #093A3E;
+			margin-left: 12.5%;
+
+		}
+
+		.logo img {
+			width: 64px;
+		}
+
+		#navbar ul {
+			list-style-type: none;
+			display: flex;
+		}
+
+		#navbar li {
+			margin-left: 1rem;
+		}
+
+		#navbar a {
+			color: #ffffff;
+			padding: 0.5rem;
+			transition: background-color 0.3s;
+		}
+
+		#navbar a:hover,
+		#navbar a.active {
+			background-color: #0077b6; /* Hover and active link background */
+		}
+
+		.sidenav {
+			height: 100%;
+			width: 160px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #0066cc;
+			overflow-x: hidden;
+			padding-top: 20px;
+            color: #fff;
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			color: #001011;
+			display: block;
+		}
+        .sidenav a:active,
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+		.second-nav {
+			background-color: #0066cc;
+			overflow: hidden;
+		}
+		.second-nav a {
+			float: left;
+			color: #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.second-nav a:hover {
+			background-color: #005599;
+		}
+		section {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            text-align: center;
+			margin-left: 14%;
+		}
+		h2 {
+			color: #003366;
+		}
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 200px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+        .image-container img {
+			width: 350px; 
+			height: auto; 
+			display: block;
+			margin: 0 auto; 
+}
+		img {
+			width: 300%;
+			height: auto;
+            display: block;
+            margin-right: 20%;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #093A3E; /* Dark blue footer */
+			color: #fff;
+			padding: 1rem;
+			text-align: center;
+			display: flex;
+			margin-left: 12.5%;
+
+		}
+
+		footer nav ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			margin-top: .5rem;
+		}
+
+		footer nav li {
+			margin: 0 0.5rem;
+		}
+
+		footer nav a {
+			color: #fff;
+			transition: color 0.3s;
+
+		}
+
+		footer nav a:hover {
+			color: #97C8EB; /* Hover link color */
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Marine Pollution</h1>
+	</header>
+
+	<nav>
+        <div class="logo">
+            <a href="#">
+                <img src="pictures/logo.jpg" alt="Life Below Water Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="sitemap.html">Site map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="user_profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="student_details.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+	<div class="sidenav">
+		<a href="delishan_content.html">Coral Reefs</a>
+		<a href="daphne_content.html">Marine Pollution</a>
+		<a href="ishini_content.html">Sustainable fisheries</a>
+		<a href="harishith_content.html">Ocean Acidification</a>
+	</div>
+
+	<nav class="second-nav">
+		<a href="#Introduction">Introduction</a>
+		<a href="#Types">Types</a>
+		<a href="#Causes">Causes</a>
+		<a href="#Impacts">Impacts</a>
+		<a href="#Solutions">Solutions</a>
+	</nav>
+	<section id="Introduction">
+		<h2>Introduction</h2>
+		<div class="image-container">
+            <img src="content_page/Marine-pollution.jpg" alt="Marine pollution">
+        </div>
+        <p>Marine pollution is a combination of chemicals and trash, most of which comes from land sources and is washed or blown into the ocean. 
+            This pollution results in damage to the environment, to the health of all organisms, and to economic structures worldwide.</p>
+	</section>
+	<section id="Types">
+		<h2>Types</h2>
+		<p>There are several types of marine pollution.Some of the types are; </p>
+		<div class="image-container">
+            <img src="content_page/plasticPollution.jpeg" alt="Plastic Pollution">
+        </div>
+        <p>1. Plastic pollution <br> It’s estimated that around eight million tonnes of plastic waste enter our oceans each year, on top of the 150 million tonnes already present in them. While larger pieces of plastic can damage coral reefs or ensnare fish and mammals, over time, they eventually break down into much smaller fragments. These particles, known as microplastics, are potentially even more dangerous, since they are more likely to be mistaken for food by organisms of all sizes. After ingestion, they can harm the internal organs and weaken the immune systems of the animal in question, not to mention filling their stomach with plastic matter that contains zero nutritional value.</p>
+		<div class="image-container">
+            <img src="content_page/lightPollution.jpg" alt="Light Pollution">
+        </div>
+        <p>2. Light pollution <br> Wherever there is human habitation, there will be light. Many towns and cities are built near to coastal areas, meaning the lighting used to illuminate our streets, homes, offices and other public places can infiltrate underneath the waves, as well. The presence of this artificial light during night-time can upset the natural circadian rhythms of fish and other marine animals, which can disrupt their daily routines. Larger fish can prey upon smaller species more easily, while reef dwelling fish can have their reproductive cycles thrown into disarray.</p>	
+        <div class="image-container">
+            <img src="content_page/noisePollution.png" alt="Noise Pollution">
+        </div>
+        <p>3.Noise Pollution <br> We may traditionally associate noise pollution with industrial sites or construction works, but sounds can actually travel for further and longer underwater than they can in the air. For that reason, noise pollution caused by anthropogenic activity is a much greater threat to marine animals than it is to those living on the land or in the air. Not only can noise pollution confuse animals which depend upon sonar signals to feed, mate and navigate their way around the ocean, but it can shorten their lifespans and threaten the very existence of entire species.</p>    
+		<div class="image-container">
+            <img src="content_page/chemicalPollution.jpg" alt="Chemical Pollution">
+        </div>
+        <p>4.Chemical Pollution <br> Pesticides, fertilisers and herbicides are commonly used by farmers to boost yields and protect against pests and diseases. Unfortunately, heavy rainfall can sweep these chemicals into gutters, streams and rivers, eventually diverting them into marine environments. Although we do possess sustainable solutions for the removal of chemicals like phosphate and ammonia from such environments, they are not always as commonly employed nor as effective as we might like. This leads to a nutritional imbalance in the water, promoting the growth of algal blooms, depriving other animals of the space, sunlight and nutrients they need and destroying the natural balance of ecosystems.</p>
+
+	</section>
+	<section id="Causes">
+		<h2>Causes</h2>
+		<p>There are many causes of ocean pollution, but most (80%) of the pollution in our oceans originates on land and is caused by humans. Here are some of the major causes of marine pollution</p>
+		<div class="image-container">
+            <img src="content_page/nonpointsource.jpg" alt="Nonpoint source pollution">
+        </div>
+        <p>1. Nonpoint source pollution (runoff) <br> Nonpoint source pollution is the accumulation of pollution from small sources that can’t be exactly pinpointed. Examples include the pollution created by individual cars, boats, farms and construction sites.</p>
+		<div class="image-container">
+            <img src="content_page/Intentionaldischarge.jpg" alt="Intentional discharge">
+        </div>
+        <p>2. Intentional discharge <br> Manufacturing plants in many areas of the world release toxic waste into the ocean, including mercury. While it has been banned in the USA, sewage also contributes to ocean pollution. Meanwhile, plastic waste poses a particularly tough challenge; according to the Ocean Conservancy, eight million metric tons of plastic go into our oceans every year.</p>
+		<div class="image-container">
+            <img src="content_page/oilspill-drone.jpg" alt="Oil spills">
+        </div>
+        <p>3.Oil spills <br> Ships are major contributors to ocean pollution, especially when crude oil spills occur. Crude oil lasts for years in the ocean and is difficult to clean up. </p>            
+		<div class="image-container">
+            <img src="content_page/Littering.jpg" alt="Littering">
+        </div>
+        <p>4.Littering <br> Atmospheric pollution — a type of ocean pollution where objects are carried by the wind to the ocean — is often caused by littering. It includes single-use plastics (such as plastic bags) and styrofoam containers which can take hundreds of years to biodegrade. </p>
+	</section>
+	<section id="Impacts">
+		<h2>Impacts</h2>
+        <div class="image-container">
+            <img src="content_page/impact.jpeg" alt="impact">
+        </div>
+		<p>Marine pollution has various impacts on environment, economy and human health. It disrupts ecosystems, damages habitats and threatens biodiversity. As a result economically industries like fisheries and tourism leads to losses.</p>
+			
+	</section>
+	<section id="Solutions">
+		<h2>Solutions</h2>
+        <div class="image-container">
+            <img src="content_page/solution.jpg" alt="solution">
+        </div>
+		<p> We can reduce marine pollution by reducing the use of chemical fertilizers as excess chemical fertilizers eventually end up in the ocean. Increaing the usage of reusable bottles and utensils. We can also reduce marine pollution by properly dipose of plastic and other trash  </p>
+		
+	</section>
+
+	<footer>
+        <p>&copy; 2024 Life Below Water. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Donate</a></li>
+                <li><a href="#" target="_blank">Volunteer</a></li>
+                <li><a href="#" target="_blank">Resources</a></li>
+                <li><a href="#" target="_blank">Partnerships</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

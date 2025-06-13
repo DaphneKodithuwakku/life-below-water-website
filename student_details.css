@@ -1,0 +1,184 @@
+*{ 
+  margin: 0;
+  padding: 0%; 
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.about-us{
+     display: flex; 
+     flex-direction:column; 
+     align-items: center; 
+     text-align: center; 
+     background-color: #001011;
+     background-image: url('pictures/student_details_wallpaper.jpg'); 
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     padding: 60px; 
+}
+.about-us h1{ 
+        text-transform: uppercase;
+        margin-bottom: 20px; 
+        color: white; 
+        font-size: 40px; 
+} 
+.about-us h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.container{ 
+        width: 65%;
+        height: 85vh;
+        background: #093A3E;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 98%;
+}
+.title-box{
+    background-color: #001011;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    width: 65%;
+    opacity: 0.8;
+}
+.container .text1{
+    width: 90%;
+    height: 10vh;
+    background-color: #001011;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+.container .text2{
+    width: 90%;
+    height: 10vh;
+    background-color: #001011;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+.container .text3{
+    width: 90%;
+    height: 10vh;
+    background-color: #001011;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+.container .text4{
+    width: 90%;
+    height: 10vh;
+    background-color: #001011;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+.pics{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.img-box{
+    width: 180px;
+    height: 270px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(student_details/Delishan.png);
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(student_details/Harishith.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(student_details/Daphne.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(student_details/Ishini.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    color: white;
+    background-color: black;
+    width: 100%;
+    left: 2%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition:top 0.5s, opacity 0.5s ;
+}
+.img-box .text1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition:top 0.5s, opacity 0.5s ;
+}
+.img-box .text2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition:top 0.5s, opacity 0.5s ;
+}
+.img-box .text3{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition:top 0.5s, opacity 0.5s ;
+}
+.img-box .text4{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition:top 0.5s, opacity 0.5s ;
+}
+.img-box:hover{
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 450px;
+}
+
+.img-box:hover .text1{
+    opacity: 1;
+    top: 450px;
+}
+.img-box:hover .text2{
+    opacity: 1;
+    top: 450px;
+}.img-box:hover .text3{
+    opacity: 1;
+    top: 450px;
+}.img-box:hover .text4{
+    opacity: 1;
+    top: 450px;
+}
+ 
